@@ -151,7 +151,7 @@ nav li:nth-child(2n+1) a:after {
 }
 
 .services a:hover span {
-  color: white;
+  color: black;
 }
 
 .services p {
@@ -212,7 +212,8 @@ nav li:nth-child(2n+1) a:after {
 
 
 
-/* CONTACT STYLES*/
+/* CONTACT STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .contact {
   color: black;
@@ -242,32 +243,32 @@ nav li:nth-child(2n+1) a:after {
 }
 
 .contact span:hover {
-  color: palevioletred;
+  color: steelblue;
 }
 
 .contact .btn-blue {
   position: relative;
   margin-top: 30px;
   color: white;
-  background: steelblue;
-  box-shadow: 0 8px #7300A5;
+  background: #AE6EE0;
+  box-shadow: 0 8px #9A8FAA;
 }
 
 .contact .btn-blue:hover {
-  background: #7300A5;
+  background: #9A8FAA;
   color: white;
 }
 
 .contact .btn-blue:after {
   position: absolute;
-  content: '☺';
+  content: '☃';
   top: 5px;
   right: 30px;
   font-size: 1.6em;
 }
 
 .contact .btn-blue:active {
-  box-shadow: 0 4px #7300A5;
+  box-shadow: 0 4px #3b6d97;
   -webkit-transform: translateY(4px);
       -ms-transform: translateY(4px);
           transform: translateY(4px);
@@ -279,7 +280,8 @@ nav li:nth-child(2n+1) a:after {
 
 
 
-/* MEDIA QUERIES STYLES*/
+/* MEDIA QUERIES STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @media (min-width: 550px) {
 
@@ -288,12 +290,12 @@ nav li:nth-child(2n+1) a:after {
   }
 
   a {
-    box-shadow: 0 8px #f4fafa;
+    box-shadow: 0 8px #9A8FAA;
   }
 
   nav a {
     padding: 7px;
-    border-right: 1px solid #fafafa;
+    border-right: 1px solid #635772;
     width: 80px;
   }
 
@@ -306,11 +308,11 @@ nav li:nth-child(2n+1) a:after {
   }
 
   header a:hover, .about a:hover {
-    box-shadow: 0 8px #f4fafa;
+    box-shadow: 0 8px #635772;
   }
 
   header a:active, .about a:active {
-    box-shadow: 0 4px #f4ba04;
+    box-shadow: 0 4px #9A8FAA;
     -webkit-transform: translateY(4px);
         -ms-transform: translateY(4px);
             transform: translateY(4px);
@@ -347,7 +349,7 @@ nav li:nth-child(2n+1) a:after {
   }
 
   .services a:hover {
-    box-shadow: 0 -8px white;
+    box-shadow: 0 -8px purple;
     -webkit-transform: scale(1.15);
         -ms-transform: scale(1.15);
             transform: scale(1.15);
@@ -362,9 +364,3 @@ nav li:nth-child(2n+1) a:after {
   }
 
 }
-
-
-/*contact*/
-
-
-
