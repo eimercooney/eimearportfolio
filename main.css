@@ -94,6 +94,8 @@ header {
   text-align: center;
 }
 
+/*Nav*/
+
 nav ul, .contact ul {
   list-style: none;
   font-size: 0;
@@ -161,7 +163,7 @@ nav li:nth-child(2n+1) a:after {
 /* ABOUT STYLES */
 
 .about {
-  background: url("http://i68.tinypic.com/29eiznr.jpg") no-repeat fixed center / cover;
+  background-color: #F4E7F9;
   color: black;
 }
 
@@ -360,6 +362,9 @@ nav li:nth-child(2n+1) a:after {
   }
 
 }
+
+
+/*contact*/
 
 
 
