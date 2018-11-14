@@ -99,6 +99,7 @@ header {
 nav ul, .contact ul {
   list-style: none;
   font-size: 0;
+    width: 100%;
 }
 
 nav li, .contact li {
@@ -107,7 +108,7 @@ nav li, .contact li {
 }
 
 nav li {
-  width: 50%;
+  width: 100%;
 }
 
 nav a {
@@ -118,8 +119,8 @@ nav a {
   line-height: 30px;
 }
 
-nav li:nth-child(2n+1) a:after {
-  position: absolute;
+nav li: {
+  position: top;
   content: '';
   top: 19.5px;
   right: -2.5px;
@@ -129,7 +130,6 @@ nav li:nth-child(2n+1) a:after {
   width: 5px;
   height: 5px;
 }
-
 
 
 /* SERVICES STYLES*/
@@ -261,7 +261,7 @@ nav li:nth-child(2n+1) a:after {
 
 .contact .btn-blue:after {
   position: absolute;
-  content: '☃';
+  content: '👋🏻';
   top: 5px;
   right: 30px;
   font-size: 1.6em;
@@ -363,4 +363,12 @@ nav li:nth-child(2n+1) a:after {
     font-size: 3em;
   }
 
+}
+
+.about 
+{ text-align: center;
+  background: #F6F4F8;
+  font-size: 14px;
+  color: #5700AD;       
+    
 }
