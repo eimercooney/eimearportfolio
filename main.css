@@ -1,6 +1,7 @@
 
 /* GENERAL STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*about*/ 
 body {
   background: #fafafa;
   font-family: 'Lucida Sans Unicode', 'Arial', serif;
@@ -89,7 +90,7 @@ header {
 }
 
 header {
-  background: url("http://i67.tinypic.com/157w2o.jpg") no-repeat fixed center / cover;
+  background: url("https://ibb.co/mBmFQV") no-repeat fixed center / cover;
   text-align: center;
 }
 
