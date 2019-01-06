@@ -34,7 +34,7 @@ h3:after {
   border-bottom: 3px solid whitesmoke;
 }
 
-h1 + h4 {
+h1 + h4 + h3 {
   font-weight: normal;
 }
 
@@ -88,7 +88,7 @@ header {
 }
 
 header {
-  background: url("https://eimearcooney.tumblr.com/image/180563152223") no-repeat fixed center / cover;
+  background: url("https://dribbble.com/shots/5789307-my-website-background?utm_source=Clipboard_Shot&utm_campaign=eimercooney&utm_content=my%20website%20background&utm_medium=Social_Share") no-repeat fixed center / cover;
   text-align: center;
 }
 
