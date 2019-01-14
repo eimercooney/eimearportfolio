@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html>
+<head>
+	<title>Eimear Cooney</title>
+<meta charset="utf-8"/>
+	
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	
+	<style> 
+	
+	   
+		/*work*/
+		
+		.work {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+			grid-template-areas: "nav nav nav nav nav nav nav nav nav nav nav nav"
+				"title title title title title title title title title title title title"
+				"app app app app app app infographic infographic infographic infographic infographic infographic "
+		"branding branding branding branding iranding branding monsters monsters monsters monsters monsters monsters "
+				"social social social social social social social social social social social social";}
+		
+		/* ------ CSS RESET ------ */
+* {
+    padding: 3px;
+	padding-left: 5px;
+    margin: 0;
+    font-size: 100%;
+    
+    line-height: 1.3em;
+}
+		
+		/*--nav--*/
+		
+		.nav {grid-area: nav;}
+		
+ nav {
+    
+   
+	position: fixed;
+	top: 0;
+	left: 0;
+    width: 100%;
+	height: 100px;
+	padding: 10px 100px;
+	color: #424241;
+	background-color: #ffff ;
+	transition: .3s;
+	box-sizing: border-box;
+	 z-index: 3;
+		}
+		
+		nav.black {
+			background: #424241;
+			height: 100px;
+			padding: 10px, 100px;
+		}
+        
+nav ul {
+	display:flex;
+	list-style: none;
+	float: middle;
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+    text-align: center;
+		}
+        
+nav ul li {
+	
+	list-style: none;
+    display: inline;
+		}
+		
+		nav ul li a {
+            
+			line-height: 80px;
+			color: #424241;
+			padding: 12px 30px;
+			text-decoration: none;
+			text-transform: uppercase;
+			transition: .3s;
+		}
+		
+		nav.black ul li a {
+			color: #000;
+			}
+		nav ul li a:focus {
+			outline: none;
+		}
+		
+
+			
+			/* -------------- LINKS ---------------- */
+a {
+    color: #424241;
+    text-decoration: none;
+    display: inline;
+    }
+        
+a:hover {
+    color: #BB98BD;
+    border-bottom: none;}
+		
+.anchor:{ 
+		font-family: 'Poppins', sans-serif;
+	    } 
+        
+		/*--TITLE---*/
+		
+		.title {grid-area: title;}
+		
+		.title h1 {
+			font-family: 'Poppins', sans-serif;
+			font-size: 5em;
+			padding-top: 110px;
+			padding-bottom: 60px;
+			text-align: center;
+			color: #ffff;
+			background-color: #BB98BD;
+			}
+		
+		/*--------PROJECTS--------*/
+		
+		
+		.app {grid-area: app;}
+		
+		app img{
+			display: grid;
+			position: relative;
+			margin: 0px;
+			padding-left: 20px;}
+			
+		app  {
+			padding-top: 20px;
+			background-color: #fff; 
+		}
+        
+		.app {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+        
+.app .app-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+        
+.app:hover .app-overlay{
+  opacity: 2;
+}
+        
+.app-image{
+  width: 100%;
+}
+        
+.app-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+        
+.app:hover .app-details{
+  top: 50%;
+  left: 50%;
+  opacity: 2;
+}
+.app-details h3{
+  color: #fff;
+  font-weight: 500;
+	font-size: 3em;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+	font-family: 'Poppins', sans-serif;
+}
+.app-details p{
+  color: #fff;
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+}
+.fadeIn-bottom{
+  top: 80%;
+}
+.fadeIn-top{
+  top: 20%;
+}
+.fadeIn-left{
+  left: 20%;
+}
+.fadeIn-right{
+  left: 80%;
+}
+			
+			
+		.infographic {grid-area: infographic;}
+		
+		.infographic img{
+			display: grid;
+			position: relative;
+			margin: 0px;
+			padding-left: 20px;}
+			
+		 .infographic {
+			padding-top: 20px;
+			background-color: #fff; 
+		}
+		
+				.infographic {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow:hidden;
+		}
+.infographic .infographic-overlay {
+  background: rgba(0,0,0,0.7);
+  padding: 1em;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+z-index: 1;
+}
+.infographic:hover .infographic-overlay{
+  opacity: 1;
+  
+  
+}
+.infographic-image{
+  width: 100%;
+}
+.infographic-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+	z-index: 2;
+}
+.infographic:hover .infographic-details{
+  top: 50%;
+  left: 50%;
+  opacity: 2;
+}
+.infographic-details h3{
+  color: #fff;
+  font-weight: 500;
+	font-size: 3em;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+	font-family: 'Poppins', sans-serif;
+}
+.infographic-details p{
+  color: #fff;
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+}
+.fadeIn-bottom{
+  top: 80%;
+}
+.fadeIn-top{
+  top: 20%;
+}
+.fadeIn-left{
+  left: 20%;
+}
+.fadeIn-right{
+  left: 80%;
+}
+	
+				
+		.branding {grid-area: branding;}
+		branding img{
+			display: grid;
+			
+		}
+		
+		branding {
+				 display: grid;
+			position: absolute;
+			margin: 0px;
+			background-color: #ffff;
+		}
+        
+			.branding {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+        
+.branding .branding-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+        
+.branding:hover .branding-overlay{
+  opacity: 2;
+}
+        
+.branding-image{
+  width: 100%;
+}
+        
+.branding-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.branding:hover .branding-details{
+  top: 50%;
+  left: 50%;
+  opacity: 2;
+}
+.branding-details h3{
+  color: #fff;
+  font-weight: 500;
+	font-size: 3em;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+	font-family: 'Poppins', sans-serif;
+}
+.branding-details p{
+  color: #fff;
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+}
+.fadeIn-bottom{
+  top: 80%;
+}
+.fadeIn-top{
+  top: 20%;
+}
+.fadeIn-left{
+  left: 20%;
+}
+.fadeIn-right{
+  left: 80%;
+}
+			
+		 
+		
+		.monsters {grid-area: monsters;}
+		
+	     monsters img{
+			 display: grid;
+			position: absolute;
+			margin: 0px;
+			background-color: #ffff;
+			}
+				
+	.monsters {
+				 display: grid;
+			position: absolute;
+			margin: 0px;
+			background-color: #ffff;
+		
+		}
+			.monsters {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+.monsters .monsters-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+.monsters:hover .monsters-overlay{
+  opacity: 2;
+}
+.monsters-image{
+  width: 100%;
+}
+.monsters-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.monsters:hover .monsters-details{
+  top: 50%;
+  left: 50%;
+  opacity: 2;
+}
+.monsters-details h3{
+  color: #fff;
+  font-weight: 500;
+	font-size: 3em;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+	font-family: 'Poppins', sans-serif;
+}
+.monsters-details p{
+  color: #fff;
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+}
+.fadeIn-bottom{
+  top: 80%;
+}
+.fadeIn-top{
+  top: 20%;
+}
+.fadeIn-left{
+  left: 20%;
+}
+.fadeIn-right{
+  left: 80%;
+}
+		
+		
+		
+	
+	
+	
+	
+	/*---social---*/
+		
+		.social {grid-area: social;}
+		
+		.social a img: hover{
+    opacity: 0.8;
+			color: #424241;
+    transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;}
+		
+    .social li {
+    display: inline-block;
+    color: #BB98BD;
+	margin: 10px;}
+		
+   .social li img { 
+    width: 50px;
+	}
+		
+   .social {
+    margin-top: 1em;
+    margin-bottom: 0em;
+    text-align: center;
+	padding-top: 0.5em;
+	background-color: #BB98BD;}
+		
+   .social img {
+	
+    width: 100%;
+    align-items: center;
+    display: block;
+    margin: 1em 1em 1em 0;}
+		
+		
+   .social ul {
+    width: 100%;
+  }
+		
+	.social a: hover {
+    color: #424241;
+	opacity: 0.8;
+    }
+			
+	</style>
+	
+	</head>
+		
+			
+		
+		<body>
+	
+			
+			
+			<div class="work">
+		
+			
+			<div class="nav">
+			<nav> 
+				
+    <ul>
+    
+        <li><a href="homepage.html">HOME</a></li>
+		<li><a href="about.html">ABOUT ME</a></li>
+        <li><a href="work.html">WORK</a></li>
+        <li><a href="homepage.html">CONTACT</a></li>
+		<li><a href="https://www.dropbox.com/s/a90zokj844br3aa/cvwebsite.png?dl=0">CV</a></li>
+		
+    </ul>
+    </nav>	
+				</div>
+				
+				<div class="title">
+		
+				<h1>My Projects</h1></div>
+				
+				
+				
+				<div class="app">
+			
+					<a href="travelapp.html">
+					 <div class="app-overlay"></div>
+      <img class="app-image" src="images/aphla.jpg">	
+						
+						<div class="app-details fadeIn-left">
+        <h3>Typography</h3>
+        <p>Fluffy Letters</p>
+      </div>
+		</a>
+	</div>
+				
+			
+				
+				<div class="app">
+					
+					<a href="app.html">
+					<div class="app-overlay"></div>
+					<img class="app-image" src="images/travelapplayout.jpg" >
+					<div class="app-details fadeIn-right">
+        
+						<h3>Travel App</h3>
+                        
+      </div>
+					</a>
+				</div>
+				
+				<div class="app">
+					<a href="app.html">
+					<div class="app-overlay"></div>
+						<img class="app-image" src="images/cocktail1.png"/>
+					
+						<div class="app-details fadeIn-left">
+        
+						<h3>Icons</h3>
+                            <p>Cocktail Menu</p>
+                        
+      </div>
+					</a>
+				</div>
+				
+				<div class="app">
+					<a href="app.html">
+					<div class="app-overlay"></div>	
+					<img class="app-image" src="images/elements%202.ai" />
+					<div class="app-details fadeIn-right">
+        
+						<h3>Elements</h3>
+						<p>Elements that Glow</p>
+						
+						</div>
+					</a>
+				</div>
+				
+				
+				
+		<div class="social">
+		<ul>
+            <li><a href="https://www.eimercooney@gmail.com/" alt="Email"> EMAIL </a></li>
+            
+            <li><a href="https://eimearcooney.tumblr.com/" alt="Tumblr">TUMBLR</a></li>
+            
+            <li><a href="https://github.com/bigajwiktoria"  alt="GitHub">GITHUB</a></li>
+            
+            <li><a href="https://www.instagram.com/eimer_designs/" alt="Instagram">INSTAGRAM</a></li>
+        </ul>
+        </div>
+				
+		
+			
+            
+            </div>
+		</body>
